@@ -26,10 +26,16 @@ void loop() {
   Serial.println(sound_value);
   Serial.print("light value : ");
   Serial.println(light_value);
+<<<<<<< HEAD
   Serial.print("count : ");
   Serial.println(count);
 
   if(count >= 0 && count < 5) {
+=======
+  Serial.println(count);
+
+  if(count > 0 && count < 5) {
+>>>>>>> master
     analogWrite(green_pin,255);  
   }
   else if(count >= 5 && count < 10){
