@@ -10,7 +10,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   int val = analogRead(A0);
-  int rad = map(val,0,1023,0,120);
+  int rad = map(val,0,1023,0,180);
   myServo.write(rad);
   delay(15);
 }
