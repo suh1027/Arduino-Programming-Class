@@ -6,8 +6,8 @@ volatile int count2 = 1;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(btn1_pin, OUTPUT);
-  pinMode(btn2_pin, OUTPUT);
+  pinMode(btn1_pin, INPUT);
+  pinMode(btn2_pin, INPUT);
 
   attachInterrupt(0, btn1ISR, RISING);
   attachInterrupt(1, btn2ISR, CHANGE);
